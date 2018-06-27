@@ -1,4 +1,4 @@
 FROM gcr.io/cloud-builders/gcloud
 
-RUN apt update && apt install expect
+RUN apt update && apt install -y expect
 ENTRYPOINT expect
