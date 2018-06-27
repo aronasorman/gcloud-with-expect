@@ -1,4 +1,4 @@
 FROM gcr.io/cloud-builders/gcloud
 
-RUN apt update && apt install -y expect
+RUN apt update && apt install -y expect postgresql-client
 ENTRYPOINT expect
