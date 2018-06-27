@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: build-image
+    args: [
+      'build',
+      '-t', 'gcr.io/$PROJECT_ID/gcloud-with-expect:latest',
+      '.'
+      ]
+
+images:
+  - 'gcr.io/$PROJECT_ID/gcloud-with-expect:latest'
